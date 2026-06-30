@@ -97,4 +97,15 @@ const getOptions = async(req,res)=>{
     }
 }
 
-export { getCars, getCarById, createCar, updateCar, deleteCar, getOptions }
+const getOptionById = async(req,res)=>{
+    try{
+        const id = parseInt(req.params.id)
+        const result = await pool.query(`SELECT * FROM options WHERE id = $1`,[id])
+        if (!result.rows[0]) return res.status(404).json({ error: 'option not found' })
+        res.status(200).json(result.rows[0])
+    }
+    catch(error){
+        res.status(500).json({ error: error.message })
+    }
+}
+export { getCars, getCarById, createCar, updateCar, deleteCar, getOptions, getOptionById }

@@ -40,4 +40,18 @@ const deleteCar = async(id)=>{
     return response.json()
 }
 
-export default{getAllCars, getCarById, createCar, updateCarById, deleteCar}
+
+
+ 
+
+const getOptions = async () => {
+    const response = await fetch('/cars/options')
+    return response.json()
+}
+
+const getOptionById = async (id) => {
+    const response = await fetch(`/cars/option/${id}`)
+    return response.json()
+}
+
+export default{getAllCars, getCarById, createCar, updateCarById, deleteCar, getOptions, getOptionById}

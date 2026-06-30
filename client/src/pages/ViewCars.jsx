@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css'
-import '../services/carsApi.jsx'
-import { useSearchParams } from 'react-router-dom'
 import carsApi from '../services/carsApi.jsx'
+import Card from '../components/Card.jsx'
 
 const ViewCars = () => {
     const [cars, setCars] = useState([])
@@ -10,14 +9,24 @@ const ViewCars = () => {
     useEffect(()=>{
         const fetchData = async()=>{
             const AllCars = await carsApi.getAllCars()
-            console.log(AllCars)
+            setCars(AllCars)
         }
         fetchData()
     },[])
 
     return (
-        <div>
-            
+        <div className='cards-container'>
+            {
+                cars && cars.length>0?
+                cars.map((car) =>
+                    <Card key={car.id} car={car} />
+                
+                
+                ) : <h3 className="noResults">{'No Cars Yet 😞'}</h3>
+
+                
+
+            }
         </div>
     )
 }
