@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../App.css'
 import carsApi from '../services/carsApi.jsx'
 import Card from '../components/Card.jsx'
+import './ViewCars.css'
 
 const ViewCars = () => {
     const [cars, setCars] = useState([])
