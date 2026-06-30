@@ -9,6 +9,7 @@ const config = {
     ssl: {
       rejectUnauthorized: false
     }    
+    // ssl: process.env.PGSSL === 'true' ? { rejectUnauthorized: false } : false
 }
 
 export const pool = new pg.Pool(config)

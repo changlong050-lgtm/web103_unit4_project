@@ -1,4 +1,4 @@
-import {pool} from './databse.js'
+import {pool} from './database.js'
 import './dotenv.js'
 import { optionsData, carsData } from '../data/carsData.js'
 
