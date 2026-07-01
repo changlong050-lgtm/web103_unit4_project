@@ -37,7 +37,11 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
+render 
+![](project4_demo.gif)
 
+app
+![](project4_demo_2.gif)
 GIF created with **LICECap**
 
 ## Notes
