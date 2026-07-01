@@ -1,0 +1,30 @@
+/* .create-page-header{
+    display: flex;
+    left: 45px;
+} */
+
+.create-page-top-container{
+    display: flex;
+    margin-left: 45px;
+    align-items: center;
+}
+.input-text{
+    font-size: 15px;
+    color:white;
+}
+
+input[type="checkbox"] {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+input[type="text"] {
+    color: white;
+    width: 200px !important;
+    height: 30px !important;
+}
+.price-box{
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+}
