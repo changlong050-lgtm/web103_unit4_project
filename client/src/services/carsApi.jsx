@@ -1,11 +1,11 @@
 const getAllCars = async ()=>{
-    const response = await fetch(`cars/`)
+    const response = await fetch(`/cars/`)
     return await response.json()
 
 }
 
 const getCarById = async(id)=>{
-    const response = await fetch(`cars/${id}`)
+    const response = await fetch(`/cars/${id}`)
     return await response.json()
 }
 

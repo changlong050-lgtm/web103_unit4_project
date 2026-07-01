@@ -38,7 +38,7 @@
     text-transform: uppercase;
     border: 2px solid transparent;
     margin: 10px;
-    width: max-content;
+    width: 140px;
 }
 
 #root [role=button]:hover, #root button:hover, #root input[type=submit]:hover {

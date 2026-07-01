@@ -25,7 +25,7 @@ const Card = ({ car }) => {
         <div className="card">
             <h3>{car.name}</h3>
             <p>Type: {car.convertible ? 'Convertible' : 'Coupe'}</p>
-            <p>Exterior: {options.exterior?.name}</p>
+            <p>Exterior: {options.exterior?.name} </p>
             <p>Roof: {options.roof?.name}</p>
             <p>Wheels: {options.wheels?.name}</p>
             <p>Interior: {options.interior?.name}</p>

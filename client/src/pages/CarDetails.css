@@ -1,0 +1,12 @@
+.detail-contianer{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 500px;
+}
+
+.detail-button{
+    width: 60px;
+}
